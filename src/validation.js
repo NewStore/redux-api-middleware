@@ -86,7 +86,7 @@ function validateRSAA(action) {
   }
 
   for (let key in action) {
-    if (key !== [CALL_API]) {
+    if (key !== CALL_API) {
       validationErrors.push(`Invalid root key: ${key}`);
     }
   }
